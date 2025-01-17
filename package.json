@@ -1,19 +1,48 @@
 {
   "name": "nuxt-app",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
+    "g": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "up": "npx taze -I major"
   },
   "dependencies": {
+    "@antfu/utils": "^8.1.0",
+    "@nuxt/eslint": "0.7.5",
     "@nuxt/kit": "^3.15.2",
+    "@nuxtjs/color-mode": "3.5.2",
+    "@nuxtjs/tailwindcss": "6.13.1",
+    "@tanstack/vue-query": "^5.64.1",
+    "@tanstack/vue-query-devtools": "^5.64.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "eslint": "^9.18.0",
+    "lucide-vue-next": "^0.471.0",
     "nuxt": "^3.15.2",
+    "radix-vue": "^1.9.12",
+    "shadcn-nuxt": "0.11.3",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@8.15.9+sha512.499434c9d8fdd1a2794ebf4552b3b25c0a633abcee5bb15e7b5de90f32f47b513aca98cd5cfd001c31f0db454bc3804edccd578501e4ca293a6816166bbd9f81"
+  "devDependencies": {
+    "@vueuse/nuxt": "^12.4.0",
+    "jsonc-parser": "^3.3.1",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "taze": "^18.2.0",
+    "typescript": "^5.7.3",
+    "ufo": "^1.5.4",
+    "unified": "^11.0.5",
+    "unist-util-visit": "^5.0.0"
+  }
 }
