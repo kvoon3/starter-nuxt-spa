@@ -1,4 +1,6 @@
-html, body , #__nuxt{
+html,
+body,
+#__nuxt {
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -25,21 +27,22 @@ html.dark {
   opacity: 75%;
 }
 
-.font-mono, [font-mono=""] {
+.font-mono,
+[font-mono=''] {
   font-variant-ligatures: none;
 }
 
 /* Overrides Floating Vue */
 .v-popper--theme-dropdown .v-popper__inner,
 .v-popper--theme-tooltip .v-popper__inner {
-  --at-apply: bg-tooltip color-base font-sans rounded border border-base shadow dark:shadow-2xl;
+  --at-apply: bg-tooltip color-base font-sans rounded border border-base shadow dark: shadow-2xl;
   box-shadow: 0 6px 30px #0000001a;
 }
 
 .v-popper--theme-tooltip .v-popper__arrow-inner,
 .v-popper--theme-dropdown .v-popper__arrow-inner {
   visibility: visible;
-  --at-apply: border-white dark:border-neutral-900;
+  --at-apply: border-white dark: border-neutral-900;
 }
 
 .v-popper--theme-tooltip .v-popper__arrow-outer,
