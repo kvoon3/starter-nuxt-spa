@@ -24,10 +24,6 @@ export default defineNuxtConfig({
 
   srcDir: 'app',
 
-  future: {
-    compatibilityVersion: 3,
-  },
-
   experimental: {
     typedPages: true,
     clientNodeCompat: true,
